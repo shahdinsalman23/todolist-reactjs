@@ -41,14 +41,14 @@ const page = () => {
   return (
     <>
 
-    <div className='flex items-center justify-center bg-zinc-800 mt-10 mb-5 w-[50%] m-auto'>
-      <form onSubmit={submitHandler}>
+    <div className='flex items-center justify-center  bg-zinc-800 mt-10 mb-5 w-[100%] lg:w-[50%] m-auto'>
+      <form onSubmit={submitHandler} className='flex items-center justify-center flex-wrap'>
         <input type="text" name="" id="" className='text-xl text-white border-zinc-800 border-2 m-8 px-4 py-2 bg-zinc-700 rounded-lg'
           placeholder='Enter Title here'
           value={title}
           onChange={(e) => { setTitle(e.target.value) }}
         />
-        <input type="text" name="" id="" className='text-xl text-white border-zinc-800 border-2 my-8 px-4 py-2 bg-zinc-700 rounded-lg'
+        <input type="text" name="" id="" className='text-xl text-white border-zinc-800 border-2 m-8 sm:mx-8 px-4 py-2 bg-zinc-700 rounded-lg'
           placeholder='Enter Description here'
           value={desc}
           onChange={(e) => { setDesc(e.target.value) }}
@@ -58,7 +58,7 @@ const page = () => {
       </div>
 
 
-      <div className="bg-zinc-800 mx-auto mt-10 flex items-center justify-center w-[50%] py-4 px-6">
+      <div className="bg-zinc-800 mx-auto mt-10 flex items-center justify-center w-[100%] lg:w-[50%] py-4 px-6">
         <ul className='w-full'>
           {renderTask}
         </ul>
