@@ -15,3 +15,20 @@ A simple, responsive ToDo List app built with React and Tailwind CSS. Users can 
    ```bash
    git clone https://github.com/username/repository-name.git
 
+## Code Overview
+
+The main component, `Page`, manages the task list and includes the following key functions:
+
+- **submitHandler**: Adds a new task to the list by taking the title and description from the input fields.
+- **deleteHandler**: Removes a task from the list based on the index.
+- **Conditional Rendering**: Displays tasks if available; otherwise, shows a "No Task Available" message to indicate an empty list.
+
+## Usage
+
+- **Add Task**: Fill in the title and description fields, then click "Add Task" to add the task to the list.
+- **Delete Task**: Click "Delete" next to any task to remove it from the list.
+
+## Technologies Used
+
+- **React**: Used for building the user interface and managing state.
+- **Tailwind CSS**: Used for styling and implementing responsive design.
